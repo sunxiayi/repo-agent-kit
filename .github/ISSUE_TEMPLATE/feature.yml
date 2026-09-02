@@ -1,0 +1,38 @@
+name: Focused feature request
+description: Propose one concrete improvement to an existing workflow
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the repository task you are trying to complete, not a broad feature list. Do not include private files, credentials, or personal data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Repository task
+      description: What are you trying to accomplish, and where does the current workflow stop helping?
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current workaround
+      description: How do you handle this task today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Useful outcome
+      description: What concrete output or decision should Repo Agent Kit provide?
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This request concerns one repository workflow and does not require private data or credentials.
+          required: true

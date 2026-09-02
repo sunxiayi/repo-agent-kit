@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security-sensitive report
+    url: https://github.com/sunxiayi/repo-agent-kit/security/advisories/new
+    about: Report a potential vulnerability privately. Do not publish secrets or exploit details in an issue.
